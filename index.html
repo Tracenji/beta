@@ -1,12 +1,12 @@
 <!doctype html>
-<link rel="icon" href="118930615_107816894323238_8229625044155393133_n.jpg">
+<link rel="icon" href="Images/Birb.jpg">
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Birb</title>
   </head>
    </body>
-   <img src="https://pbs.twimg.com/profile_banners/2731877487/1593627901/1500x500" alt="Birb">
+   <img src="Images/BirbBanner.jfif" alt="Birb" class="center">
 <h1>Birb website</h1>
 <ul>
 <a href="https://www.youtube.com/watch?v=F01jjkZ8g8I&feature=youtu.be" target="_blank">mitt goal</a>
@@ -28,6 +28,44 @@
 <br>
 <br>
 <a href="https://tracenji.github.io/favorites.html">Favorites</a>
+</ul>
+<button type="button" class="collapsible">Discord Server</button>
+<div class="content">
+<iframe src="https://discord.com/widget?id=788920381779214387&theme=light" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
  </body>
+ <style>
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+<style>
+<style>
+.collapsible {
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+</style>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
  </html>
  
