@@ -1,0 +1,25 @@
+<body>
+<div class="radio">
+  <audio controls src="http://nettradio.radiotrondelag.no:8000/radio_trondelag" autoplay id="myAudio">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+		</div>
+<style>
+.radio{
+display: none
+}
+</style>
+  <script>
+    // function goPlay(){
+    //     console.log("in goplay")
+    setTimeout(() => {
+        var x = document.getElementById("myAudio");
+        // function playAudio() {
+        x.play();
+      },
+      1000
+    )
+    // }
+  </script>
+</body>

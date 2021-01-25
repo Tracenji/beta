@@ -23,7 +23,16 @@
    </body>
    <img src="Images/BirbBanner.jfif" alt="Birb" class="center">
 <h1>Birb website</h1>
-<a href="https://www.radiotrondelag.no/" target="_blank">RADIO</a>
+<button type="button" class="collapsible">RADIO</button>
+<div class="content">
+<a href="https://www.radiotrondelag.no/" target="_blank">RADIO TRØNDELAG</a>
+<div class="radio">
+  <audio controls src="https://nettradio.radiotrondelag.no:8443/radio_trondelag" autoplay id="myAudio">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+		</div>
+</div>
 <br>
 <br>
 <ul>
@@ -74,18 +83,6 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 <body>
-//Radio trondelag
-<div class="radio">
-  <audio controls src="http://nettradio.radiotrondelag.no:8000/radio_trondelag" autoplay id="myAudio">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-		</div>
-<style>
-.radio{
-display: none
-}
-</style>
   <script>
     // function goPlay(){
     //     console.log("in goplay")
@@ -94,7 +91,7 @@ display: none
         // function playAudio() {
         x.play();
       },
-      1000
+      0
     )
     // }
   </script>
